@@ -25,7 +25,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1.5;
+    font-size: 16px;
 }
 ol, ul {
 	list-style: none;
@@ -50,7 +51,7 @@ table {
 .flex{
     display: flex;
     justify-content: flex-start;
-    text-align: center;
+    align-items: center;
 }
 .container{
     max-width: 1200px;
@@ -76,28 +77,39 @@ header{
     background-color: rgb(212,206,167);
 }
 .hero{
-    padding: 80px 0;
+    padding: 60px 0;
 }
-.hero .flex{
+.hero ol{
+    list-style: decimal;
+    padding-left: 50px;
+}
+.hero ul{
+    list-style: disc;
+    padding-left: 50px;
+}
+.hero .flex {
     justify-content: space-between;
+    align-items: stretch;
 }
-.col{
+.menu{
+    background-color: #285a79;
+    font-size: 24px;
+    padding:32px 0;
+    padding-left: 60px;
+    color: white;
     width: 30%;
-    background-color: rgb(40,90,121);
-    padding: 30px 0;
     box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.5);
-}
-.col ul {
-    list-style: disc inside;
-    
-}
-.col ol{
-    list-style: decimal inside;
-}
-.hero li{
-    margin-top: 20px;
-}
 
+}
+.menu li {
+    line-height: 2;
+}
+.hero .sub-menu{
+    list-style: square;
+}
+.menu .list-style-image{
+    list-style-image: url('https://freepngimg.com/thumb/green_tick/27889-3-green-tick.png');
+}
 /* section text */
 .section-dd{
     padding: 30px 0;
